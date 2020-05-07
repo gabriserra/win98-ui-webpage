@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c0c0c0;
+}
+
+main {
+  width: calc(100% - 250px);
+  margin-left: 240px;
+  margin-bottom: 60px;
+}
+
+aside {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 8px;
+  display: flex;
+  align-items: stretch;
+}
+
+aside .tree-view {
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+h1 {
+  margin: 12px 0;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  width: 400px;
+  height: 1px;
+  opacity: 0.5;
+  background: linear-gradient(
+    to right,
+    red 20%,
+    yellow 20%,
+    yellow 36%,
+    green 36%,
+    green 60%,
+    blue 60%,
+    blue 100%
+  );
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+p {
+  max-width: 35rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+blockquote {
+  margin: 0 0 20px;
+  padding: 20px;
+  background: #dfdfdf;
+}
+
+blockquote footer {
+  margin: 12px 0 0 12px;
+}
+
+details {
+  margin-top: 12px;
+}
+
+summary {
+  user-select: none;
+  cursor: pointer;
+  display: inline;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary {
+  margin-bottom: 8px;
+}
+
+button.focused {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+button.active {
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
+    inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+.window-container {
+  display: flex;
+  align-items: center;
+}
+
+.window-container img {
+  margin-right: 5px;
+}
+
+.window-body a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.window-shell {
+  background-color: black;
+}
+
+.window-shell p {
+  margin: 0;
+  color: white;
+  margin-left: 5px;
+}
+
+.window {
+  margin: 32px;
+  width: 250px;
+}
+
+.window-shell p.shell-output {
+  margin-left: 10px;
+}
+
+.window-prompt {
+  animation-name: prompt-keyframe;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes prompt-keyframe {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.field-row {
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+  }
+  
+}
