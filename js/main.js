@@ -37,4 +37,3 @@ function minutesLeadingZeros(date)
 { 
 	return (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
 }
-

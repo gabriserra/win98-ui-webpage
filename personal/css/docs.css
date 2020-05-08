@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #c0c0c0;
+  font-size: 15px !important;
 }
 
 main {
@@ -28,6 +29,7 @@ aside .tree-view {
 
 h1 {
   margin: 12px 0;
+  font-size: 4rem;
 }
 
 hr {
@@ -53,7 +55,6 @@ h2 {
 }
 
 p {
-  max-width: 35rem;
   line-height: 1.5;
   text-align: justify;
 }

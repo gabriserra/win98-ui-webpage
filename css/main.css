@@ -76,14 +76,14 @@ a {
 */
 
 .windows, body {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .windows-button {
     -webkit-appearance: none;
 }
 
-.windows, .windows-header {
+.windows {
     overflow: hidden;
 }
 
@@ -145,7 +145,7 @@ a {
     text-align: left;
     color: #fff;
     padding: .25em .75em;
-    line-height: 1.4;
+    line-height: 1;
     border-top: 1px solid silver;
     border-left: 1px solid silver;
     border-right: 2px solid silver;
@@ -239,7 +239,7 @@ a {
     vertical-align: top;
     width: 72px;
     z-index: 0;
-    line-height: 12px;
+    line-height: 15px;
     margin: 0;
     padding: 8px 1px;
 }
